@@ -1,0 +1,14 @@
+# Системные и редакторные файлы 
+.DS_Store
+.idea/
+~$*
+
+clangd_indexer/build
+projects/*
+!projects/fast_test
+plans.txt
+
+.out
+.csv
+*.exe
+*.a

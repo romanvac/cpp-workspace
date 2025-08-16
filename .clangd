@@ -1,0 +1,21 @@
+CompileFlags:
+  # Treat code as C++, use C++17 standard, enable more warnings.
+  Add: [-std=c++17, -ferror-limit=0, -frelaxed-template-template-args,
+        -isystem, -I/usr/local/cuda/include, -I/usr/include/c++/9,
+        -I/usr/include/x86_64-linux-gnu/c++/9, -I/usr/include/c++/9/backward,
+        -I/usr/lib/gcc/x86_64-linux-gnu/9/include, -I/usr/local/include,
+        -I/usr/include/x86_64-linux-gnu, -I/usr/include ]
+
+  # Добавьте правило для .tpp файлов
+  #  If:
+  #    PathMatch: .*\.tpp$
+  #    Add: [-x, c++]
+
+# Remove extra warnings specified in compile commands. Single value is also acceptable, same as "Remove: [-mabi]" Remove: -mabi
+
+Index:
+    Background: Skip
+    StandardLibrary: No
+
+Diagnostics:
+  Suppress: [conflicting_types, builtin_definition,constexpr_var_requires_const_init, -Wenum-constexpr-conversion]
