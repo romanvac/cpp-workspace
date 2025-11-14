@@ -3,9 +3,13 @@
 .idea/
 ~$*
 
+build
 clangd_indexer/build
+
 projects/*
 !projects/fast_test
+!projects/CMakeLists.txt
+
 plans.txt
 
 .out
