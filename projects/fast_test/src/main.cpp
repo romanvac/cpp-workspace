@@ -2,6 +2,22 @@
 
 // clang-format off
 
+// ----------------------------------------------------
+// отключение проверок clang-tidy:
+
+// error_here // NOLINT(error_name1, error_name2, ...)
+
+// NOLINTNEXTLINE(error_name1, error_name2, ...)
+// error_here
+
+// NOLINTBEGIN(error_name1, error_name2, ...)
+// error_here
+// ...
+// error_here
+// NOLINTBEGIN(error_name1, error_name2, ...)
+
+// ----------------------------------------------------
+
 // -Wall	        Включает все основные предупреждения (не включает -Wextra)
 // -Wextra	      Добавляет дополнительные предупреждения (логические ошибки, неиспользуемые параметры)
 // -Wpedantic	    Строгое соответствие стандарту C++ (отлавливает GNU-расширения)
