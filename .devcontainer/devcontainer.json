@@ -5,7 +5,13 @@
   "name": "CPP-Development",
   "build": {
     "context": "..",
-    "dockerfile": "../Dockerfile"
+    "dockerfile": "../Dockerfile",
+    // костыль который необходимо починить через entrypoint.sh
+    "args": {
+      "USER_UID": "1000", 
+      "USER_GID": "1000", 
+      "USERNAME": "cppuser"
+    }
   },
   "customizations": {
     "vscode": {
@@ -32,22 +38,5 @@
   },
   "remoteUser": "cppuser",
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
-  "workspaceFolder": "/workspace",
-  "containerUser": "cppuser",
-  "postCreateCommand": "sudo chown -R cppuser:cppuser /workspace"
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-
-	// Uncomment the next line to run commands after the container is created.
-	// "postCreateCommand": "cat /etc/os-release",
-
-	// Configure tool-specific properties.
-	// "customizations": {},
-
-	// Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "devcontainer"
+  "workspaceFolder": "/workspace"
 }
-
