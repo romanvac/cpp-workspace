@@ -1,0 +1,12 @@
+{
+  "language": "en, ru",
+  "words": [
+    "Eigen",
+    "libtbb",
+    "NOLINTNEXTLINE",
+    "Werror",
+    "Wextra",
+    "Wpedantic"
+  ],
+  "ignoreWords": []
+}

@@ -32,7 +32,9 @@
         "ms-vscode.cpptools-themes",
         "ms-vscode.cpptools",
         "Gruntfuggly.todo-tree",
-        "llvm-vs-code-extensions.vscode-clangd"
+        "llvm-vs-code-extensions.vscode-clangd",
+        "streetsidesoftware.code-spell-checker-russian",
+        "streetsidesoftware.code-spell-checker"
       ]
     }
   },
