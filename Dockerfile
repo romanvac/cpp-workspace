@@ -9,6 +9,8 @@ RUN userdel -r ubuntu || true && \
 RUN apt update && apt upgrade -y && \
     apt install -y \
     g++ \
+    valgrind \
+    libtbb-dev \
     vim \
     wget \
     make \

@@ -95,13 +95,16 @@
 // =============================================
 // 8. Популярные сторонние библиотеки (Third-party)
 // =============================================
-//#include <fmt/core.h>      // Форматированный вывод
-//#include <boost/any.hpp>   // Boost
-//#include <Eigen/Dense>     // Линейная алгебра
-//#include <nlohmann/json.hpp> // JSON парсер
+// #include <fmt/core.h>      // Форматированный вывод
+#include <tbb/tbb.h>
+
+#include <Eigen/Dense>    // Линейная алгебра
+#include <boost/any.hpp>  // Boost
+// #include <nlohmann/json.hpp> // JSON парсер
 
 // =============================================
 // 9. Макросы для удобства (Debug Helpers)
 // =============================================
 #define DBG(x) std::cout << #x << " = " << (x) << std::endl
-#define ASSERT(cond, msg) if (!(cond)) throw std::runtime_error(msg)
+#define ASSERT(cond, msg) \
+  if (!(cond)) throw std::runtime_error(msg)
