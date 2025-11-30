@@ -25,63 +25,63 @@
 // 2. Контейнеры и алгоритмы (Algorithms & Data Structures)
 // =============================================
 #include <deque>
+#include <execution>
 #include <forward_list>
 #include <list>
 #include <map>
+#include <numeric>
 #include <queue>
+#include <ranges>
 #include <set>
 #include <stack>
 #include <unordered_map>
 #include <unordered_set>
 #include <vector>
-#include <ranges>
-#include <numeric>
-#include <execution>
 
 // =============================================
 // 3. Ввод/Вывод и Файловая система (I/O & Filesystem)
 // =============================================
+#include <filesystem>
 #include <fstream>
 #include <iomanip>
 #include <ios>
 #include <iostream>
 #include <sstream>
-#include <filesystem>
 #include <syncstream>
 
 // =============================================
 // 4. Многопоточность и Асинхронность (Concurrency)
 // =============================================
 #include <atomic>
+#include <barrier>
 #include <condition_variable>
 #include <future>
+#include <latch>
 #include <mutex>
+#include <semaphore>
 #include <shared_mutex>
 #include <thread>
-#include <semaphore>
-#include <latch>
-#include <barrier>
 
 // =============================================
 // 5. Строки и Регулярные выражения (Strings & Regex)
 // =============================================
-#include <string>
-#include <string_view>
 #include <charconv>
 #include <cstring>
-#include <regex>
 #include <format>
+#include <regex>
+#include <string>
+#include <string_view>
 
 // =============================================
 // 6. Математика и Время (Math & Time)
 // =============================================
-#include <numbers>
+#include <chrono>
 #include <cmath>
 #include <complex>
+#include <ctime>
+#include <numbers>
 #include <random>
 #include <ratio>
-#include <chrono>
-#include <ctime>
 
 // =============================================
 // 7. Системные утилиты (System Utilities)

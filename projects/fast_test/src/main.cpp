@@ -14,7 +14,7 @@
 // error_here
 // ...
 // error_here
-// NOLINTBEGIN(error_name1, error_name2, ...)
+// NOLINTEND(error_name1, error_name2, ...)
 
 // ----------------------------------------------------
 
