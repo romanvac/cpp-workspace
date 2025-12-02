@@ -2,6 +2,7 @@
   "language": "en, ru",
   "words": [
     "Eigen",
+    "libgtest",
     "libtbb",
     "NOLINTNEXTLINE",
     "Werror",

@@ -11,6 +11,7 @@ RUN apt update && apt upgrade -y && \
     g++ \
     valgrind \
     libtbb-dev \
+    libgtest-dev \
     vim \
     wget \
     make \
