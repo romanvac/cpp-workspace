@@ -12,6 +12,7 @@ RUN apt update && apt upgrade -y && \
     valgrind \
     libtbb-dev \
     libgtest-dev \
+    lcov \
     vim \
     wget \
     make \

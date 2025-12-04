@@ -5,6 +5,7 @@
     "libgtest",
     "libtbb",
     "NOLINTNEXTLINE",
+    "STREQUAL",
     "Werror",
     "Wextra",
     "Wpedantic"
