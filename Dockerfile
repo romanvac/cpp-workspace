@@ -13,11 +13,13 @@ RUN apt update && apt upgrade -y && \
     libtbb-dev \
     libgtest-dev \
     lcov \
+    gcovr \
     vim \
     wget \
     make \
     ninja-build \
     cmake \
+    cmake-format \
     git \
     tree \
     gdb \
